@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 111.236 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.856 s <<< FAILURE! - in TestSuite
+sanity(com.application.scenarios.TC01_SanityTest)  Time elapsed: 5.794 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused: connect
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'AMOL-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: driver.version: AndroidDriver
+	at com.application.scenarios.TC01_SanityTest.sanity(TC01_SanityTest.java:40)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused: connect
+	at com.application.scenarios.TC01_SanityTest.sanity(TC01_SanityTest.java:40)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.application.scenarios.TC01_SanityTest.sanity(TC01_SanityTest.java:40)
+
